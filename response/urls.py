@@ -7,6 +7,7 @@ urlpatterns = [
     path('api/threads/<abbrev>', views.ListThread.as_view()),
     path('api/board/', views.ListBoard.as_view()),
     path('api/replies/<id>', views.ListReplies.as_view()),
+    path('api/thread/post', views.CreateThreadView.as_view())
 
 ]
 
